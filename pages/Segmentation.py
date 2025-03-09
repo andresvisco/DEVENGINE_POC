@@ -1,13 +1,14 @@
-from google.cloud import aiplatform
-from google.cloud.aiplatform_v1beta1.types import Tool, Retrieval, VertexAISearch, GenerateContentRequest, Content, Part, GenerateContentResponse
 import streamlit as st
-import asyncio
 import json
 import os
 from google.oauth2 import service_account
+from google.cloud import aiplatform
+from google.cloud.aiplatform_v1beta1.types import (
+    Tool, Retrieval, VertexAISearch, GenerateContentRequest, Content, Part
+)
 
 def generate():
-    # Leer credenciales desde Streamlit Secrets
+    # Leer las credenciales de la variable de entorno
     credentials_json = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
     if not credentials_json:
         st.error("Google Cloud credentials not found. Please set the GOOGLE_APPLICATION_CREDENTIALS_JSON environment variable.")
@@ -16,13 +17,11 @@ def generate():
     credentials_dict = json.loads(credentials_json)
     credentials = service_account.Credentials.from_service_account_info(credentials_dict)
 
-    # Inicializar Vertex AI
     aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
 
-    # Agregar título en Streamlit
     st.title("DEVENGINE - PROTOTYPE Summ.")
 
-    # Selección de temas para análisis
+    # Selección de tópicos de análisis
     topics_to_extract = st.multiselect(
         "Select topics to extract",
         [
@@ -38,78 +37,68 @@ def generate():
         ]
     )
 
-    # Agregar tema personalizado
     text_other_topic = st.text_input("Add a custom topic")
     if text_other_topic:
         topics_to_extract.append(text_other_topic)
-    
-    # Mensaje de éxito
+
     st.success(f"The selected topics {topics_to_extract} will be the focus in the analysis.")
-    
-    # Cargar archivo
+
+    # Subir archivo de transcripción
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
-        document1 = uploaded_file.read().decode("utf-8")
+        document_text = uploaded_file.read().decode("utf-8")
     else:
         st.error("Please upload a file.")
         return
 
-    # Contexto del sistema
-    si_text1 = "You are an expert in profiling and summarizing conversations between an interviewer and an interviewee."
+    # Instrucción del sistema
+    system_instruction = """You are an expert in profiling and summarizing transcription of conversations between an interviewer and an interviewee."""
 
-    # Instrucción del usuario con los temas seleccionados
-    text1 = f"""You are an expert in profiling and summarizing the transcription of conversations between an interviewer and an interviewee.
+    # Prompt para la IA
+    text1 = f"""
     You will receive a text file that you must analyze, and answer about:
     {". ".join(topics_to_extract)}
     """
 
-    # Configurar grounding con Vertex AI Search
+    # Definir herramientas de Grounding (Vertex AI Search)
     tools = [
-    Tool(
-        retrieval=Retrieval(
-            vertex_ai_search=VertexAISearch(
-                datastore="projects/test-interno-trendit/locations/global/collections/default_collection/dataStores/ds-deven_1741511856262"
+        Tool(
+            retrieval=Retrieval(
+                vertex_ai_search=VertexAISearch(
+                    datastore="projects/test-interno-trendit/locations/global/collections/default_collection/dataStores/ds-deven_1741511856262"
+                )
             )
-        )
-    ),
-]
+        ),
+    ]
 
-    # Configuración del modelo con grounding
-    model = "gemini-2.0-flash-001"
-    client = aiplatform.generation.GenerationServiceClient(credentials=credentials)
-
-    generate_content_config = types.GenerateContentConfig(
+    # Definir la configuración de generación
+    request = GenerateContentRequest(
+        model="gemini-2.0-flash-001",
+        contents=[
+            Content(
+                role="user",
+                parts=[Part.from_text(text1 + "\n\n" + document_text)]
+            )
+        ],
+        system_instruction=[Part.from_text(system_instruction)],
         temperature=0.1,
         top_p=0.95,
         max_output_tokens=8192,
-        response_modalities=["TEXT"],
-        tools=tools,  # Agrega el grounding
-        system_instruction=[types.Part.from_text(text=si_text1)],
+        tools=tools
     )
 
-    contents = [
-        types.Content(
-            role="user",
-            parts=[
-                types.Part.from_text(text=text1 + "\n\n" + document1)
-            ]
-        )
-    ]
-
-    # Llamada al modelo con grounding
-    response = client.generate_content(
-        model=model,
-        contents=contents,
-        config=generate_content_config,
+    # Ejecutar la generación
+    client = aiplatform.gapic.PredictionServiceClient()
+    response = client.predict(
+        endpoint=f"projects/test-interno-trendit/locations/us-central1/publishers/google/models/gemini-2.0-flash-001",
+        instances=[{"content": text1 + "\n\n" + document_text}],
+        parameters={"temperature": 0.1, "top_p": 0.95, "max_output_tokens": 8192},
     )
 
-    # Extraer respuesta
-    result = "".join([chunk.text for chunk in response if chunk.candidates and chunk.candidates[0].content.parts])
-
-    # Mostrar resultado en Streamlit
+    result = response.predictions[0]["content"]
     st.write(result)
 
-    # Guardar en JSON si se ingresa el nombre del candidato
+    # Guardar resultado
     candidate_name = st.text_input("Enter the candidate's name")
     if st.button("Save Result") and candidate_name:
         results_dir = "results"
@@ -120,7 +109,7 @@ def generate():
             json.dump({"result": result}, f)
         st.success(f"Result saved as {file_name}")
 
-        # Proporcionar botón de descarga
+        # Botón de descarga
         with open(file_name, "r") as f:
             st.download_button(
                 label="Download JSON",
