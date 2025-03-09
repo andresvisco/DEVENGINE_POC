@@ -1,5 +1,5 @@
-from google import genai
-from google.genai import types
+from google.cloud import aiplatform
+from google.cloud.aiplatform.gapic.schema import predict
 import streamlit as st
 import asyncio
 import json
@@ -8,7 +8,7 @@ from google.oauth2 import service_account
 
 def generate():
     # Leer las credenciales de la variable de entorno
-    credentials_json = os.getenv('GOOGLE_APPLICATION_CREDENTIALS_JSON')
+    credentials_json = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
     if not credentials_json:
         st.error("Google Cloud credentials not found. Please set the GOOGLE_APPLICATION_CREDENTIALS_JSON environment variable.")
         return
@@ -22,12 +22,7 @@ def generate():
     except RuntimeError:
         asyncio.set_event_loop(asyncio.new_event_loop())
 
-    client = genai.Client(
-        vertexai=True,
-        project="test-interno-trendit",
-        location="us-central1",
-        credentials=credentials
-    )
+    aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
 
     # Agregar el título
     st.title("DEVENGINE - PROTOTYPE Summ.")
@@ -49,64 +44,34 @@ def generate():
     text_other_topic = st.text_input("Add a custom topic")
     if text_other_topic:
         topics_to_extract.append(text_other_topic)
-    text1 = types.Part.from_text(text=f"""You are an expert in profiling and summarizing the transcription of conversations between an interviewer and an interviewee.
+    text1 = f"""You are an expert in profiling and summarizing the transcription of conversations between an interviewer and an interviewee.
 
     You will receive a text file that you must analyze, and answer about:
                                 {". ".join(topics_to_extract)}
-    """)
+    """
     st.success(f"The selected topics {topics_to_extract} will be the focus in the analysis.")
     
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
-        document1 = types.Part.from_bytes(
-            data=uploaded_file.read(),
-            mime_type="text/plain",
-        )
+        document1 = uploaded_file.read().decode("utf-8")
     else:
         st.error("Please upload a file.")
         return
 
     si_text1 = """You are an expert in profiling and summarizing transcription of conversations between an interviewer and an interviewee."""
 
-    model = "gemini-2.0-flash-001"
-    contents = [
-        types.Content(
-            role="user",
-            parts=[
-                text1,
-                document1
-            ]
-        )
-    ]
-    generate_content_config = types.GenerateContentConfig(
-        temperature=0.1,
-        top_p=0.95,
-        max_output_tokens=8192,
-        response_modalities=["TEXT"],
-        safety_settings=[types.SafetySetting(
-            category="HARM_CATEGORY_HATE_SPEECH",
-            threshold="OFF"
-        ), types.SafetySetting(
-            category="HARM_CATEGORY_DANGEROUS_CONTENT",
-            threshold="OFF"
-        ), types.SafetySetting(
-            category="HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            threshold="OFF"
-        ), types.SafetySetting(
-            category="HARM_CATEGORY_HARASSMENT",
-            threshold="OFF"
-        )],
-        system_instruction=[types.Part.from_text(text=si_text1)],
-    )
+    model = "projects/test-interno-trendit/locations/us-central1/models/gemini-2.0-flash-001"
+    instances = [{"content": text1 + "\n\n" + document1}]
+    parameters = {"temperature": 0.1, "top_p": 0.95, "max_output_tokens": 8192}
 
     result = ""
-    for chunk in client.models.generate_content_stream(
-        model=model,
-        contents=contents,
-        config=generate_content_config
-    ):
-        result += chunk.text
-        st.write(chunk.text)
+    for response in aiplatform.gapic.PredictionServiceClient().predict(
+        name=model,
+        instances=instances,
+        parameters=parameters,
+    ).predictions:
+        result += response["content"]
+        st.write(response["content"])
 
     # Guardar el resultado en un archivo JSON local
     candidate_name = st.text_input("Enter the candidate's name")
