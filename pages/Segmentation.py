@@ -1,5 +1,5 @@
 from google.cloud import aiplatform
-from google.cloud.aiplatform import types
+from google.cloud.aiplatform_v1beta1.types import Tool, Retrieval, VertexAISearch, GenerateContentRequest, Content, Part, GenerateContentResponse
 import streamlit as st
 import asyncio
 import json
@@ -65,14 +65,14 @@ def generate():
 
     # Configurar grounding con Vertex AI Search
     tools = [
-        types.Tool(
-            retrieval=types.Retrieval(
-                vertex_ai_search=types.VertexAISearch(
-                    datastore="projects/test-interno-trendit/locations/global/collections/default_collection/dataStores/ds-deven_1741511856262"
-                )
+    Tool(
+        retrieval=Retrieval(
+            vertex_ai_search=VertexAISearch(
+                datastore="projects/test-interno-trendit/locations/global/collections/default_collection/dataStores/ds-deven_1741511856262"
             )
-        ),
-    ]
+        )
+    ),
+]
 
     # Configuración del modelo con grounding
     model = "gemini-2.0-flash-001"
