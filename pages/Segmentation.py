@@ -5,7 +5,7 @@ import streamlit as st
 import json
 import os
 from google.oauth2 import service_account
-
+import asyncio
 def generate():
     # Leer las credenciales de la variable de entorno
     credentials_json = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
