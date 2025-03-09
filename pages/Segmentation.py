@@ -73,19 +73,22 @@ def generate():
 
     # Definir la configuración de generación
     request = GenerateContentRequest(
-        model="gemini-2.0-flash-001",
-        contents=[
-            Content(
-                role="user",
-                parts=[Part(text=text1 + "\n\n" + document_text)]
-            )
-        ],
-        system_instruction=[Part(text=system_instruction)],
-        temperature=0.1,
-        top_p=0.95,
-        max_output_tokens=8192,
-        tools=tools
-    )
+            model="gemini-2.0-flash-001",
+            contents=[
+                Content(
+                    role="user",
+                    parts=[Part(text=text1 + "\n\n" + document_text)]
+                )
+            ],
+            system_instruction=[Part(text=system_instruction)],
+            generation_config={
+                "temperature": 0.1,
+                "top_p": 0.95,
+                "max_output_tokens": 8192
+            },
+            tools=tools
+        )
+
 
     # Ejecutar la generación
     client = aiplatform.gapic.PredictionServiceClient()
