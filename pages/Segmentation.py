@@ -77,10 +77,10 @@ def generate():
         contents=[
             Content(
                 role="user",
-                parts=[Part.from_text(text1 + "\n\n" + document_text)]
+                parts=[Part(text=text1 + "\n\n" + document_text)]
             )
         ],
-        system_instruction=[Part.from_text(system_instruction)],
+        system_instruction=[Part(text=system_instruction)],
         temperature=0.1,
         top_p=0.95,
         max_output_tokens=8192,
