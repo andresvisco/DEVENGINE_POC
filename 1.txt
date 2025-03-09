@@ -1,0 +1,278 @@
+﻿Beatriz Quintanilla and Alex Gontcharov - 2025/02/06 07:44 PST - Transcript
+Attendees
+Alex, Beatriz Quintanilla, read.ai meeting notes
+Transcript
+Alex: and penant paper now obsolete.
+Beatriz Quintanilla: Okay.
+Alex: So, I'm just going to get rid of recording…
+Beatriz Quintanilla: Yes. But it's the lunch time.
+Alex: but the transcription. Perfect. All right. So, Petra, it's good to meet you. Thanks for finding the time. So, it's already afternoon there. where in Argentina are you?
+Beatriz Quintanilla: 
+Beatriz Quintanilla: Is the Yes.
+Alex: Yeah. Yeah,…
+Beatriz Quintanilla: because in Canada is eight. No, I think that there is a five hours of difference. Let me check.
+Alex: we have four time zones, so it's Yeah.
+Beatriz Quintanilla: Five. Five hours.
+Alex: Yeah. Sounds Cool. Yeah. so I'm on my first cup of coffee here, but yeah,…
+Beatriz Quintanilla: Yes. Okay.
+Alex: it's already the afternoon.
+Beatriz Quintanilla: It's good.
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: Yes. Where in Buenos?
+Alex: Petric, where in Argentina are you? Where in the city?
+Beatriz Quintanilla: Buenos is in the location that is Buenos has a lot of wenos that has a lot of different location…
+Alex: Yeah. Yeah. Yeah. Yeah.
+Beatriz Quintanilla: but is the downtown of Wenos.
+Alex: We stayed in Palmo. That was a couple of years ago.
+Beatriz Quintanilla: I'm okay.
+Alex: Yeah. That was nice. Yeah.
+Beatriz Quintanilla: No. Yes. I am close to the districtto.  I don't know that if you sight see the districtto aros outlet that is in the corner between parway and go this is the district to aros I live in this street in paray and go  Yes. Okay.
+Alex: trying to put you in a bit of a box and figure out what kind of a PM you are, what you don't do, way your strong points are. So, it looks like are you working right now or looks like you've just finished.
+Beatriz Quintanilla: H no I am available now because I returned from Barcelona during November because I was working in Barcelona only three five months because I had a relocation…
+Alex: Mhm.
+Beatriz Quintanilla: but now I return because Aentry is not good company because they move me from Argentina to Spain without sign any project but for me it was dramatic because  In Spain, I was doing all the time courses courses because I start to do not find any project in time because they only have a maintenance work but my position is for implementation transformation project.
+Beatriz Quintanilla: I am proact…
+Alex: Okay.
+Alex: So, they moved you to Barcelona and there was really kind of nothing to do. All right. I'll
+Beatriz Quintanilla: but for me was a surprise because I thought that if you are moving people that mean that you have open project but I understood that a center has the polit the policy to move people without any await project I assume no because I was not the only person. There was a lot of consultant and other person more that decided to left. No. Exactly.
+Alex: Hope it was a good vacation. Barcelona is a nice place.
+Beatriz Quintanilla: No. Yes.
+Alex: Sounds good. Before you did nothing in Barcelona. give me So,…
+Beatriz Quintanilla: Before. Yes.
+Alex: yeah, give me an idea like Yeah,…
+Beatriz Quintanilla: Let me Okay.
+Alex: you've done a lot of things, So, we're not going to go through all of this kind of stuff,…
+Beatriz Quintanilla: Okay.
+Alex: ?
+Beatriz Quintanilla: I would an SIP system.
+Alex: So, yeah, maybe a summary of …
+Beatriz Quintanilla: Okay. Exactly.
+Alex: what are you as a PM?
+Beatriz Quintanilla: Exactly. Yes. I was started to work as a project manager in 2011 for Sions Argentina has a division that was SimnCon business and services that was the system people. I did the transition from maintenance services from at Argentina both exitum and…
+Beatriz Quintanilla: then during the 2012 I did two implementation for two legal entities. One was at Argent Atsini that now is at Argentina and…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: the other was warline Argentina that now is bit queen something because change the name but during this time during the 2012 12 I do the migration from ECC6 to S4 HANA.
+Alex: Yeah. Mhm.
+00:05:00
+Beatriz Quintanilla: And in this h position I did a transition a business IT manager and report directly to the Latin CFO,…
+Alex: Yeah. Mhm.
+Beatriz Quintanilla: a local CFO because in that moment was two one for every company. And then after the next year I was working in a stabilization of and modification of the new processes that was received from headquarter for example regarding the AP process or regarding the controlling objects and then I was working for a long time in order to improve the process according to the alignment from global and…
+Beatriz Quintanilla: At Argentina bought another company that is Unify Argentina. I did the implementation the carving 2 in the global template that France always was managed by atos Frzia and…
+Alex: Mhm. Yeah.
+Alex: Yeah. Mhm.
+Beatriz Quintanilla: then I did the carving from unifi in the global tempe of the SIP system during I think that was 2017 or…
+Beatriz Quintanilla: 2018. Okay.
+Alex: Yeah, Bris let me bring you to a little bit closer to kind of the present.
+Alex: I'm just trying to stay away from the details and understand out of all your projects you would say how many implementation projects did you do like throughout your career roughly?
+Alex: roughly. Mhm. Two for success factors.
+Alex: And so yeah, you work with a bunch of different companies. So as a PM, the old big companies PMO is probably structured. So as a PM can you give me an quick idea where do you come in into the project
+Beatriz Quintanilla: Okay.
+Beatriz Quintanilla: Let Exactly.
+Alex: what are the processes the size of the budget that type of stuff
+Beatriz Quintanilla: Generally in 2017 I always received the budget only I did for example if I need to find some consultant in order to replace the car local because most of the time I used to work with abroad consultant in India or…
+Alex: Mhm.
+Beatriz Quintanilla: in different countries in Europe but in some cases for localization I need to contracted local people.  In addition, I follow up the hours, the time sheet of the people and the negotiation between the CFO with external suppliers. I manage the stakeholder during the use of acceptantes. I reporting to the CFOs and reported to France too in the steering committees or in the progress of the implementations for when I work in ATOS.
+Beatriz Quintanilla: when I work in local companies in Argentina, I received the project g for public actions. So I did the letter prepare all the documentation how will be the government how will be all exact no the letter of the project that is the project charter.
+Alex: You're talking. Okay. No. Mhm.
+Beatriz Quintanilla: Yes. that you have all the information regarding the scope and the people that will work with the different roles that you have as to be and…
+Alex: Mhm.
+Beatriz Quintanilla: and you have all the governance process that will manage in the project in addition the description of every role and how will be managed the different meetings during all implementation.  It was done for a success factor when I received the project. In addition in another company I worked as a project manager from AMS because for example one project manager implemented the project but the project has a big backlog.
+Beatriz Quintanilla: So I take this backlo I stabilize the version of the SIP in production but in addition I implemented new changes but in this case I only did a task of stabilization and reducing and complete and finalize the backlog the backlo that was created during the implementation. Yes. And…
+Alex: Yeah, quick question.
+Beatriz Quintanilla: then I work for success
+Alex: Usually when you deal with these projects and again not necessarily SAP but whenever you deliver who are the executive kind of stake like sponsors that you usually deal with and do you deal with the executive sponsors directly? Right.
+00:10:00
+Beatriz Quintanilla: generally was the general manager that belong to different areas for example of the high position in the company because I always presented the project because always I participated in implementation of project so that's mean that I will change all the company processes so in that moment when I have a gap or I have a discussion in a discussion between the stakeholder and the project manager of the  local client was in conflict internally. I reported to the sponsor that they need to made a decision for a specific suppose h point that need the manage of the high people the high position and not the local position.
+Beatriz Quintanilla: No, because sometimes that the key user can make some decision but other decision need change of the policy of the company. So for the reason I always to go to the steering committee with the issues that has to this level no because I don't never report that issues that belong to the local business always highlighted the changes of the procedures or…
+Alex: Okay,…
+Beatriz Quintanilla: policies in the Bunny.
+Alex: that makes sense. in terms of your PM style there are kind of when you work for a big organization when you deliver big projects sometimes PMO is really strict and the project manager becomes more of kind of okay we need to get to this gate then we need to wait for sign off then we need to get to the next gate or…
+Beatriz Quintanilla: It's like
+Alex: smaller companies smaller projects PMs are more hands-on …
+Alex: if something's
+Alex: They can go talk to AAB developers or whatever and say, "Hey, what's going on? why are we stuck? Can we guys get going?" where do you fall on this kind of scale? Mhm. Mhm.
+Beatriz Quintanilla: Yes. for example in most of the company do not have PMO that I work at that I use my own documentation that I follow always from the methodology of SIP system that always use the methodology activate…
+Beatriz Quintanilla: because I always receive the SIP support from Brazil in order to get all the last documentation that I can use for the different deliverance for example for the quality case the last but I always use all the template that are proposed by active methodology in SAP I get this information and in addition the consultant always use the template that is suggested by SIP system in some when I receive this documentation I propose to the customer maybe I need to change the logos or…
+Beatriz Quintanilla: maybe to the customer service is I need to put some specific suppose par.
+Alex: Mhm.
+Beatriz Quintanilla: Okay, I will add but my base is the SIP methodology. No, that propose SRP ERP and…
+Alex: Mhm.
+Beatriz Quintanilla: then I can modify is depending if the customer ask me but always I used to use the activate methodology or…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: if the company has a PNO. Okay, I received the instruction what kind of documentation I need to use. But generally I always use the template of the SIP system and modify some sections.
+Beatriz Quintanilla: Generally that the budget was assignment to me that I only did the controls…
+Alex: Yeah. Yeah.
+Alex: No, that totally makes sense. in terms of the budgets, what was you'd say the biggest budget that you had a chance to control directly as a PM? Mhm. Mhm.
+Beatriz Quintanilla: but for example if I need to do a new implementation for example suppose that you say for this company you need to implement success factor okay how many consultant do you need generally this task was done for other area I always receive the project ready in order to start with implementation…
+Alex: Mhm. Yeah.
+00:15:00
+Beatriz Quintanilla: but if I need to do this I exactly was the precise exact Exactly.
+Alex: But the budget was attached to the project, I guess.
+Alex: And you were in control of the budget and like looking and saying, "Hey, we are over here by 10%." But wait under here. what was the biggest kind of budget that was assigned to your project?
+Beatriz Quintanilla: Yeah, you don't remember but I think the day but I think that generally I manage internal budget that was supplied by the CFO Latan…
+Alex: Is it 5 super roughly.
+Beatriz Quintanilla: but really I don't remember that…
+Alex: Mhm.
+Beatriz Quintanilla: which is what was the budget because how you say I always control that the CFO son say okay you have this budget but you need to say me how many money was consumed by the consultant with the India with the France with the local and…
+Alex: Mhm. Yeah.
+Alex: Yeah, this is exactly…
+Beatriz Quintanilla: in addition sometimes I contract external exact I don't remember maybe exactly 10 consultant with one technical or…
+Alex: what I'm trying to figure out, Because often PMS are my budget was 5 million and out of that 4 million was hardware, So, what was the size of the team? And that's what I'm trying to kind of take biggest one that you've worked with. Mhm. Mhm.
+Beatriz Quintanilla: two technical project leaders one in Argentina and in India. In addition, I have all the cost of the different unit in different countries because when implement the module fee or SD or co I have the head off in every country in Europe that you receive indirect budget because they are participating in your project. No, but …
+Beatriz Quintanilla: but I used to work in internal project in different places in the world that it's not only local…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: but I was splitted in France. No. Yes.
+Alex: And so risk management for the project that was basically on your shoulders as a PM also. So when you reported you reported budget risks, all that kind of stuff. Mhm.
+Beatriz Quintanilla: 
+Beatriz Quintanilla: Yes. This I used to report always when I started in some cases I participate in the assessment sites. For Artos for example people from France and Germany come to Wenosirus in order to check the sizing that was estimated internally by in this moment I participated with a group of consultant and the technical project manager in the site and check if all these h people involve it will be covered in the budget that was suggested because always was managed by global funds and the CFO Latam Lat South America.
+Beatriz Quintanilla: it was my involvement in this kind of project. But for example, for local projects in Argentina when I participate in consultants in Argentina always the sales area give me vat this is the project that you need to implement for this customer. Please start the discovery session and organize all the meeting.  If you need support from SIP or area something, you need a special consultant that is not included in this plan that was paid by the customer, you need to communicate in for example no but sometimes for example in success factor always is planning for an architect.
+Beatriz Quintanilla: So when I detect some issues I say my budget for the architect according to you was for example suppose that was 25 per month 30 hours and now I can see that it's not 30 hours it's more or less okay I did this kind of control in my team because I always to control all the hours that different people work…
+Beatriz Quintanilla: because in Argentina it's common that one consultant is working for different companies not only for my company. So I always check it how many hours you work this week. According to the deliverance that they send me I can check that really they work or…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: No because I can see…
+Alex: Yeah. Mhm.
+Beatriz Quintanilla: which is the progress of the customizing if they participate in internal calls with the key users or they participate in the workshop or…
+Alex: Yeah. at this point do you understand kind of SAP the internal workings of it to the point…
+Beatriz Quintanilla: in the presentation and that's all. No.
+Alex: where you can say this should not take this functional consultant to do it more than really 3 4 hours and he's charging me 10 right can you kind of tell at this point?
+00:20:00
+Alex: Yeah. Yeah. Mhm.
+Beatriz Quintanilla: I never participated success factor but I know the modules because during implementation in ATS as was and template global has all the modules includ because it's related with the financial and the payment of the employees for example for success factor I learned that the consultant say okay I don't implement the module central employee I will take these hours.
+Beatriz Quintanilla: But these hours I check it according to customizing the presentation that they did to the customer.
+Alex: Mhm.
+Beatriz Quintanilla: In addition the documentation that they deliver I check the documentation that is clear or not for the customer and then I can approve the hours. No, but they say okay this documentation takes suppose 10 hours. Okay. I check the documentation and the technical documentation that they prepare according to the rules of the SIP success factor take this time. I approve. And then this yes success factor has a special sheet that has the name that is very complicated…
+Alex: So wait wait. SAP success factors actually kind of gives guidelines for all this for how I didn't realize that. Okay, that's pretty cool.
+Alex: Okay. Yeah.
+Beatriz Quintanilla: because it's different from S4 that has different sections that you have all the customizing and…
+Alex: Yeah. Yeah. Yeah. Yeah.
+Beatriz Quintanilla: and you need to complete all these technical and the consultant send you it's like similar the old blueprint or SI SIP system…
+Alex: Mhm.
+Beatriz Quintanilla: but success factor had Excel files. It has a Excel file for every object that has in success factor and you have all the fields and the consultants fill it out in order to do the customizing in the environment because it's not like technical documentation.
+Alex: Wait, is that part of the SAP methodology and so they give you the blueprint for hey Okay.
+Beatriz Quintanilla: Exactly. Yes.
+Alex: I didn't realize that one. Gotcha. All right. Sounds good.
+Alex: batteries, I got the point. so here is what we're kind of looking for here. So, it's a new client. and with a new client, it's always a little, h kind of iffy, but the good thing is the guy who is buying used to be our customer at a different company and he bought from us quite a bit.  So he's a trustworthy guy, moved to a new company and now he's saying, "Hey, show me what you've got." So basically the company is called Blue Crab Consulting. What they do, they have their own solution and then they also implement the solution which is called eight-fold. It's an AI based solution for workforce I think it's the recruitment solution basically.
+Alex: So it's not and then they also do M kind of success factors implementations here and So basically it's usually a third party solution eightfold within success factors environment with the end client.  So it's a delivery implementation PM basically any SAP success factor is obviously a big plus all that kind of stuff right but usually not huge projects usually smaller projects medium size changing scope that kind of stuff how it works so sorry all of the clients are in the US most all clients are in the  us. So, what they're thinking is they're hiring a couple of guys in Canada and they're hiring a couple of people in Argentina.
+Alex: they're not the challenge right now is with what's going on in the US, nobody knows how the travel is going to work, and every once in a while, not often, but every once in a while if a PM needs to go into the US now it's a little kind of, everybody's waiting to see what that crazy is going to do, so for now they're saying, "Hey, show us a couple of profiles. Let's get the conversation going and see what that's going to cost us and things like that." So, that's where we are.
+Alex: Moneywise, what did you make in your last role and what are you looking for?
+Beatriz Quintanilla: I would like to work in implementation or…
+00:25:00
+Beatriz Quintanilla: maybe as you know I would like to be a higher position that is poss No,…
+Alex: Mhm.
+Beatriz Quintanilla: that has a different projects that you can manage in high level not in detail level that I used to do. No, because when I did an implementation in ERP,…
+Alex: Mhm. Yeah. Mhm.
+Beatriz Quintanilla: I always follow the methodology. I work many years but I would like in some moment to grow in another position that I can manage different project at the same time maybe for the same customer or different customer that I can manage a high level no as a program man exactly I would like…
+Alex: Kind of like a program manager kind of level. Okay. Mhm.
+Beatriz Quintanilla: but in addition I am open to continue to work in SIP or success factor or maybe I know that not only There is another tools for example Salesforce or another application that need to be integrated with SIP system that I open to know and to learn new technologies.
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: I like it a lot when I receive project that need to have an interface with another ERPs different that do not belong to SIP. I like it a lot. In addition, I did a course BTP that allowed to connect different in a sample that I have time that I did the BTP.
+Alex: Mhm. Yeah. yeah. Yeah. Yeah. Yeah. on the beach.
+Beatriz Quintanilla: Yes. Did I No,…
+Alex: on the beach in Barcelona. Yes, there we go.
+Beatriz Quintanilla: 
+Beatriz Quintanilla: no, no, no. in the office. I did a lot of courses in addition BTP because I manage AMS for BTP in customer portto but this BTP was implemented but I would like to be part of the different component in
+Alex: Yeah. Mhm.
+Beatriz Quintanilla: because I like it learn a lot. This is my wish now that I would like to grow in my position because in addition Alex I did an MBA in Barcelona during the 2021 I can understand how to read the balance how to know that the company is good or…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: not but really I need to apply this because I am not accountant I system engineering but for the reason during I work always with the financial area I don't understand the balances because for me was I only manage all the processes all the…
+Beatriz Quintanilla: 
+Alex: Yeah. Yeah.
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: but in addition for the reason I did the MBA so I would like to use all the knowledge that I have in order to reinforce and to learn new levels no in my career
+Alex: And those so blue crab is their PMO processes are not super rigid. So they definitely looking forward to somebody to contribute to the processes too. So I don't think they're not probably big enough for a program manager kind of level. So I think it's going to be more of a tactical PM position than a strategic PM position to be honest.
+Alex: But let's see, let's see…
+Alex: if I can get the conversation going there. I wanted to talk about money. So, when we present you, we always say, "Hey, this is Beatric's profile, and this is what she's going to cost you." what makes sense to you? What was your last kind of salary at Accension? What are you looking to make?
+Beatriz Quintanilla: Yes. I understood,…
+Beatriz Quintanilla: Alex, that this work will be remote all the time is…
+Alex: Remote 100%. Yeah.
+Beatriz Quintanilla: but I can work from any country not only in Argentina but I need to consider the time table that the customer has but in addition I can okay yes I was thinking that is for other companies that are proposing me that is $6,000 per month most of them no because the idea Alex that as return from Barcelona. I have opened the tax authority in Spain.
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: But my idea is to close this because if I found another work that has me to invoice from another country that is different from Spain and Spain only I can work with Visa. But my idea is to now I trying to find a work that I close to the taxes my physical residency in Barcelona in Spain and…
+00:30:00
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: in Argentina for a time and then to open in Paraguay because I know that Paraguay has a specific benefit for when you work for other companies in the world. No.
+Alex: Yeah. Yeah. Yeah. I'm hearing we're actually looking at Faraguay too because we deal with consultants mostly.
+Alex: but we're considering maybe also employing some of the people and Argentina is a nightmare for this right so we are looking at Paraguay so how would you then pay tax if you open up in Paraguay Uh-.
+Beatriz Quintanilla: in $6,000 I can receive all the money for example in bank of US or wise account …
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: but I can submit issue legal invoices okay…
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: because there are a lot of companies consultant in Spain or…
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: that you are to work not in legal invoices but for me it's not Because if I have an issue with the tax authority,…
+Beatriz Quintanilla: I will have penalties. No. And for the reason I prefer to move to Parawai.
+Alex: So you want to physically move to Paraguay?
+Beatriz Quintanilla: I can do this in three months. My idea, Alex, is if I No,…
+Alex: No. So just only…
+Beatriz Quintanilla: no, only need to move to No,…
+Alex: but if you have the fiscal you receive your money through a Paraguan company. Mhm.
+Beatriz Quintanilla: It's not necessary. You can receive this in order to get first the temporal temporary residence, you need to go to Paraguay in order to do that one. And then you need to wait 45 days and next need to travel again in order to get the national document.
+Alex: Mhm.
+Beatriz Quintanilla: And then you need to left to the lawyer a letter that they can ask by you the fal residency and after you have the parway document you can ask the fal res residency and you get this in 15 days and…
+Alex: Mhm. Yeah. Mhm.
+Beatriz Quintanilla: then the lawyer send to you a digital paper And you can start to invoices from anywhere in the world because you don't need to live in paray…
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: because exactly you…
+Alex: Yeah. Okay. I understand. Yeah. Mhm.
+Beatriz Quintanilla: but you need to go one time for a year to par one day you need to stay…
+Alex: Mhm. Okay.
+Beatriz Quintanilla: but it's not like another exactly you need to pay.
+Alex: Quick fairy ride. No problem.
+Alex: So if you have the fiscal residency in Paraguay and you bill from your Paraguayan company, you receive money in there, Argentina is not going to charge taxes.
+Beatriz Quintanilla: No h the idea is that if you have the residence in Paraguay and you are working for local companies in Paraguay, you need to pay taxes.
+Alex: Yeah. Yeah. Yeah. Mhm.
+Beatriz Quintanilla: But if you work for external company that do not belong to Parawaii, you don't need to pay taxes but only you need to pay the task that is done by an accountant every month that you are working and issue invoices that is not a lot of money compared with the taxes that I have in Argentina.
+Alex: Mhm. Yeah.
+Beatriz Quintanilla: For example, if I work in Argentina as a inscript responsible, I need to pay 30 37 percentage of the all money that I receiving.
+Beatriz Quintanilla: But in…
+Alex: Yeah. so they're not…
+Beatriz Quintanilla: but if I get the resident from Paraguay, I don't need to keep a lot of time in Argentina because Argentina can say you are building in Paraguay and you are living all the time in Argentina. It's not good. If exactly the idea is that you only one person only need to have one physical residency.
+Alex: but you still live in Argentina. So in Argentina will not tax you for what you make in Paraguay basically. Okay.
+Beatriz Quintanilla: You have the residence in Paraguay or in Arcina. you cannot have two residents. It's prohibited.
+Alex: Mhm.
+Beatriz Quintanilla: But for example, now I have the resident in Spain because I recently returned.
+Alex: Okay.
+Beatriz Quintanilla: But in order to open the other resident, I need to close Spain for example and…
+Alex: Mhm.
+Beatriz Quintanilla: change to Argentina and then close in Argentina and…
+Alex: Okay.
+Beatriz Quintanilla: move to Parag. in order to build legally.
+Alex: Okay. I understand.
+Beatriz Quintanilla: Okay. Yes,…
+Alex: And so when you open it in Paraguay, you build a company Dev Engine, which is Canadian company. Paraguay charges you nothing.
+00:35:00
+Beatriz Quintanilla: you need to pay some charges. That is not a lot compared.
+Alex: Yeah. Is it 10% or…
+Beatriz Quintanilla: When I did account, I remember that was No,…
+Alex: is it even less?
+Beatriz Quintanilla: it's 5 percentage.
+Beatriz Quintanilla: I think it is very low.
+Alex: Okay.
+Alex: Okay. Yeah.
+Beatriz Quintanilla: No, it's very good when I received all this information…
+Alex: Yeah. Yeah.
+Beatriz Quintanilla: because I was in contact with the different lawyers and I had a friend in United Kingdom that he comment me at why you don't build from Par and why and he explained me I say okay you are right I will start to looking for information.
+Alex: I should start building from Paraguay now based on this. Yeah. Makes sense. Okay. Bed.
+Alex: I got to go grab get my daughter to school. So, I got the point. 6K sounds about right. This is what I kind of expected. So, again, new client 50/50. Live this in my hands. I'm going to send your profile to them. See if we can get some traction there. and I will be in touch with you as soon as I hear back from the client. But other than that, I got the point. I got everything I need.
+Beatriz Quintanilla: No. Yes.
+Beatriz Quintanilla: Okay.
+Beatriz Quintanilla: Which is the Alex one question.
+Alex: Yeah, six.
+Beatriz Quintanilla: What is the estimated salary for the PN that you are looking for? I am in the is okay.
+Alex: Six is about they didn't tell us the number. They basically said, "Hey, tell us what's kind of available and then we'll see if it makes sense for our budget." But we did …
+Beatriz Quintanilla: But it's possible.
+Alex: we've done quite a bit of hiring in Argentina. Yeah. Yeah.
+Beatriz Quintanilla: And one Okay.
+Alex: I think it's probably the top end of it, but that's probably doable. Yeah, we Yeah,…
+Beatriz Quintanilla: And in addition is possible to send invoices the first three months from Argentina and then when I finalize all the errands I can change to pro okay okay okay so the…
+Alex: we don't care about that. you do whatever works for you. As long as you send us the invoice and deal with your own text, we're good. Yeah. All right. Sounds good, Bri. Thank you so much.
+Beatriz Quintanilla: then okay you will contact me that…
+Alex: I will keep you updated no matter what.
+Beatriz Quintanilla: if the customer is Okay.
+Alex: Even if it doesn't go anywhere, I'm not gonna just kind of disappear on you.
+Beatriz Quintanilla: Okay.
+Alex: So that's how we like to do it. All right.
+Beatriz Quintanilla: Thank you, Alex. Bye-bye. Bye-bye.
+Alex: All right. Thanks, Patrice. Take care. Bye bye. Fake.
+Meeting ended after 00:38:14 👋
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
