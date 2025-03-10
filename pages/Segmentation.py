@@ -20,13 +20,6 @@ def generate():
                 credentials_dict = raw_secret  # Ya es un diccionario
     
             # Guardar el JSON en un archivo temporal
-            credentials_path = "/tmp/gcp_credentials.json"
-            with open(credentials_path, "w") as f:
-                json.dump(credentials_dict, f)  # Escribirlo correctamente
-    
-            # Configurar la variable de entorno
-            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
-    
             # Cargar credenciales en Vertex AI
             credentials = service_account.Credentials.from_service_account_file(credentials_path)
     
