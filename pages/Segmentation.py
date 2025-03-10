@@ -35,7 +35,7 @@ def generate():
             aiplatform.init(
                 credentials=credentials,
                 project="test-interno-trendit",
-                location="us-central1"
+                location="global"
             )
     
             st.success("Vertex AI inicializado correctamente.")
