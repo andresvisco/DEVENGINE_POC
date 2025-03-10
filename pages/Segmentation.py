@@ -115,7 +115,6 @@ def generate():
     result = ""
     try:
         prediction_response = aiplatform.gapic.PredictionServiceClient().predict(
-            name=model,  # Esto es correcto aquí
             instances=instances,
             parameters=parameters,
             **grounding_config
