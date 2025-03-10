@@ -19,6 +19,7 @@ def generate():
     
         st.success("Credenciales de Google cargadas correctamente.")
         credentials = service_account.Credentials.from_service_account_file(credentials_path)
+        aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
 
     else:
         st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
@@ -31,7 +32,7 @@ def generate():
     except RuntimeError:
         asyncio.set_event_loop(asyncio.new_event_loop())
 
-    aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
+    
 
     # Agregar el título
     st.title("DEVENGINE - PROTOTYPE Summ.")
