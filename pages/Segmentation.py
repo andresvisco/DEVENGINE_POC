@@ -107,8 +107,7 @@ def generate():
     # Crear la solicitud para predecir
     prediction_request = {
         "instances": instances,
-        "parameters": parameters,
-        "tools": grounding_config['tools']
+        "parameters": parameters
     }
 
     # Realizar la predicción
