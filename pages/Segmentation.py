@@ -10,16 +10,23 @@ def generate():
     # Leer las credenciales de la variable de entorno
     if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
         try:
+            # Obtener el secreto de Streamlit
             raw_secret = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+            
+            # Eliminar los saltos de línea adicionales y asegurarse de que sea una única línea
+            raw_secret = raw_secret.replace("\n", "").replace("\r", "")  # Eliminar saltos de línea
     
-            # Si el secreto es un string mal escapado, corregimos los caracteres especiales
-            if isinstance(raw_secret, str):
-                raw_secret = raw_secret.replace("\n", "\\n").replace("\t", "\\t")
-                credentials_dict = json.loads(raw_secret)
-            else:
-                credentials_dict = raw_secret  # Ya es un diccionario
+            # Cargar el JSON del string
+            credentials_dict = json.loads(raw_secret)  # Convertir a diccionario
     
             # Guardar el JSON en un archivo temporal
+            credentials_path = "/tmp/gcp_credentials.json"
+            with open(credentials_path, "w") as f:
+                json.dump(credentials_dict, f)  # Escribirlo correctamente
+    
+            # Configurar la variable de entorno
+            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+    
             # Cargar credenciales en Vertex AI
             credentials = service_account.Credentials.from_service_account_file(credentials_path)
     
