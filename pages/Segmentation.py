@@ -10,11 +10,14 @@ def generate():
     # Leer las credenciales de la variable de entorno
     if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
         try:
-            # Revisar si el secreto ya es un diccionario
-            if isinstance(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"], dict):
-                credentials_dict = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+            raw_secret = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+    
+            # Si el secreto es un string mal escapado, corregimos los caracteres especiales
+            if isinstance(raw_secret, str):
+                raw_secret = raw_secret.replace("\n", "\\n").replace("\t", "\\t")
+                credentials_dict = json.loads(raw_secret)
             else:
-                credentials_dict = json.loads(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
+                credentials_dict = raw_secret  # Ya es un diccionario
     
             # Guardar el JSON en un archivo temporal
             credentials_path = "/tmp/gcp_credentials.json"
