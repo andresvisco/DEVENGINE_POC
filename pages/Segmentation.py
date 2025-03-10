@@ -8,13 +8,20 @@ from google.oauth2 import service_account
 import asyncio
 def generate():
     # Leer las credenciales de la variable de entorno
-    credentials_json = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
-    if not credentials_json:
-        st.error("Google Cloud credentials not found. Please set the GOOGLE_APPLICATION_CREDENTIALS_JSON environment variable.")
-        return
-
-    credentials_dict = json.loads(credentials_json)
-    credentials = service_account.Credentials.from_service_account_info(credentials_dict)
+    if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
+    # Crear un archivo temporal con las credenciales
+        credentials_path = "/tmp/gcp_credentials.json"
+        with open(credentials_path, "w") as f:
+            f.write(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
+    
+        # Configurar la variable de entorno
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+    
+        st.success("Credenciales de Google cargadas correctamente.")
+    else:
+        st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
+    
+    
 
     # Crear un bucle de eventos si no existe uno
     try:
