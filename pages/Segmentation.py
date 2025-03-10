@@ -115,8 +115,7 @@ def generate():
     try:
         prediction_response = aiplatform.gapic.PredictionServiceClient().predict(
             instances=instances,
-            parameters=parameters,
-            **grounding_config
+            parameters=parameters
         )
         for response in prediction_response.predictions:
             result += response["content"]
