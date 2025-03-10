@@ -9,19 +9,31 @@ import asyncio
 def generate():
     # Leer las credenciales de la variable de entorno
     if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
-    # Crear un archivo temporal con las credenciales
-        credentials_path = "/tmp/gcp_credentials.json"
-        with open(credentials_path, "w") as f:
-            f.write(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
+        try:
+            # Convertir el secreto de string a diccionario
+            credentials_dict = json.loads(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
     
-        # Configurar la variable de entorno
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+            # Guardar el JSON en un archivo temporal
+            credentials_path = "/tmp/gcp_credentials.json"
+            with open(credentials_path, "w") as f:
+                json.dump(credentials_dict, f)  # Usa json.dump() para escribirlo correctamente
     
-        st.success("Credenciales de Google cargadas correctamente.")
-        credentials = service_account.Credentials.from_service_account_file(credentials_path)
-        aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
-        st.write("paso")
-
+            # Configurar la variable de entorno para Google Cloud
+            os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+    
+            # Cargar credenciales en Vertex AI
+            credentials = service_account.Credentials.from_service_account_file(credentials_path)
+    
+            # Inicializar Vertex AI
+            aiplatform.init(
+                credentials=credentials,
+                project="test-interno-trendit",
+                location="us-central1"
+            )
+    
+            st.success("Vertex AI inicializado correctamente.")
+        except json.JSONDecodeError as e:
+            st.error(f"Error al decodificar JSON de credenciales: {e}")
     else:
         st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
     
