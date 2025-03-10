@@ -20,6 +20,7 @@ def generate():
         st.success("Credenciales de Google cargadas correctamente.")
         credentials = service_account.Credentials.from_service_account_file(credentials_path)
         aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
+        st.write("paso")
 
     else:
         st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
