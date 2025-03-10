@@ -6,6 +6,7 @@ import json
 import os
 from google.oauth2 import service_account
 import asyncio
+
 def generate():
     # Leer las credenciales de la variable de entorno
     if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
@@ -45,15 +46,11 @@ def generate():
     else:
         st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
     
-    
-
     # Crear un bucle de eventos si no existe uno
     try:
         asyncio.get_event_loop()
     except RuntimeError:
         asyncio.set_event_loop(asyncio.new_event_loop())
-
-    
 
     # Agregar el título
     st.title("DEVENGINE - PROTOTYPE Summ.")
@@ -109,7 +106,6 @@ def generate():
 
     # Crear la solicitud para predecir
     prediction_request = {
-        "name": model,
         "instances": instances,
         "parameters": parameters,
         "tools": grounding_config['tools']
@@ -118,7 +114,12 @@ def generate():
     # Realizar la predicción
     result = ""
     try:
-        prediction_response = aiplatform.gapic.PredictionServiceClient().predict(**prediction_request)
+        prediction_response = aiplatform.gapic.PredictionServiceClient().predict(
+            name=model,  # Esto es correcto aquí
+            instances=instances,
+            parameters=parameters,
+            **grounding_config
+        )
         for response in prediction_response.predictions:
             result += response["content"]
             st.write(response["content"])
