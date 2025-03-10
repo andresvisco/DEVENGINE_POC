@@ -87,18 +87,6 @@ def generate():
         return
 
     # Grounding (reemplaza la colección con la correcta de tu entorno)
-    grounding_config = {
-        "tools": [
-            {
-                "retrieval": {
-                    "vertex_ai_search": {
-                        "datastore": "projects/test-interno-trendit/locations/global/collections/default_collection/dataStores/ds-deven_1741511856262"
-                    }
-                }
-            }
-        ]
-    }
-
     # Configuración del modelo
     model = "projects/test-interno-trendit/locations/us-central1/models/gemini-2.0-flash-001"
     instances = [{"content": text1 + "\n\n" + document1}]
@@ -106,14 +94,14 @@ def generate():
 
     # Crear la solicitud para predecir
     prediction_request = {
-        "instances": instances,
-        "parameters": parameters
-    }
+    "instances": instances,  # Lista de instancias para predecir
+    "parameters": parameters  # Parámetros adicionales para la predicción
+}
 
-    # Realizar la predicción
-    result = ""
     try:
+        # Realizar la predicción
         prediction_response = aiplatform.gapic.PredictionServiceClient().predict(
+            endpoint="projects/test-interno-trendit/locations/us-central1/endpoints/your-endpoint-id",  # Asegúrate de usar el endpoint correcto
             instances=instances,
             parameters=parameters
         )
@@ -122,7 +110,6 @@ def generate():
             st.write(response["content"])
     except Exception as e:
         st.error(f"Prediction request failed: {e}")
-        return
 
     # Guardar el resultado en un archivo JSON local
     candidate_name = st.text_input("Enter the candidate's name")
