@@ -10,15 +10,18 @@ def generate():
     # Leer las credenciales de la variable de entorno
     if "GOOGLE_APPLICATION_CREDENTIALS_JSON" in st.secrets:
         try:
-            # Convertir el secreto de string a diccionario
-            credentials_dict = json.loads(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
+            # Revisar si el secreto ya es un diccionario
+            if isinstance(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"], dict):
+                credentials_dict = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+            else:
+                credentials_dict = json.loads(st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
     
             # Guardar el JSON en un archivo temporal
             credentials_path = "/tmp/gcp_credentials.json"
             with open(credentials_path, "w") as f:
-                json.dump(credentials_dict, f)  # Usa json.dump() para escribirlo correctamente
+                json.dump(credentials_dict, f)  # Escribirlo correctamente
     
-            # Configurar la variable de entorno para Google Cloud
+            # Configurar la variable de entorno
             os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
     
             # Cargar credenciales en Vertex AI
@@ -34,6 +37,8 @@ def generate():
             st.success("Vertex AI inicializado correctamente.")
         except json.JSONDecodeError as e:
             st.error(f"Error al decodificar JSON de credenciales: {e}")
+        except Exception as e:
+            st.error(f"Error inesperado: {e}")
     else:
         st.error("No se encontró GOOGLE_APPLICATION_CREDENTIALS_JSON en Streamlit Secrets.")
     
