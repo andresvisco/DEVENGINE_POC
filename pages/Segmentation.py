@@ -2,8 +2,23 @@ from google import genai
 from google.genai import types
 import streamlit as st
 import asyncio
+import json
+from google.oauth2 import service_account
+from google.cloud import aiplatform
 
 def generate():
+    # Leer las credenciales de los secretos
+    credentials_json = st.secrets["GOOGLE_APPLICATION_CREDENTIALS_JSON"]
+    if not credentials_json:
+        st.error("Google Cloud credentials not found. Please set the GOOGLE_APPLICATION_CREDENTIALS_JSON secret.")
+        return
+
+    credentials_dict = json.loads(credentials_json)
+    credentials = service_account.Credentials.from_service_account_info(credentials_dict)
+
+    # Inicializar el cliente de Vertex AI con las credenciales
+    aiplatform.init(credentials=credentials, project="test-interno-trendit", location="us-central1")
+
     # Crear un bucle de eventos si no existe uno
     try:
         asyncio.get_event_loop()
@@ -93,4 +108,3 @@ def generate():
     ):
         st.write(chunk.text)
 
-generate()
