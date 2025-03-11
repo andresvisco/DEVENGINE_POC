@@ -1,4 +1,4 @@
-streamlit
+google-genaistreamlit
 langchain_community
 google-cloud
 google-auth
