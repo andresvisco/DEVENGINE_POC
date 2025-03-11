@@ -108,3 +108,4 @@ def generate():
     ):
         st.write(chunk.text)
 
+generate()
